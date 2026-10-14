@@ -1,0 +1,31 @@
+{
+  "name": "tour-marketplace-backend",
+  "version": "1.0.0",
+  "description": "Unified Travel Marketplace & Operator Infrastructure Backend (Node.js, Express, MySQL)",
+  "main": "src/server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "db:migrate": "node database/migrate.js",
+    "db:seed": "node database/seed.js",
+    "test:phase1": "node scripts/verify-phase1.js",
+    "test:phase2": "node scripts/verify-phase2.js",
+    "test:phase3": "node scripts/verify-phase3.js",
+    "test:phase4": "node scripts/verify-phase4.js",
+    "test:phase5": "node scripts/verify-phase5.js",
+    "test:phase6": "node scripts/verify-phase6.js",
+    "test:all": "node scripts/verify-all-phases.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "helmet": "^8.0.0",
+    "jsonwebtoken": "^9.0.2",
+    "morgan": "^1.10.0",
+    "mysql2": "^3.12.0",
+    "zod": "^3.24.1"
+  }
+}
